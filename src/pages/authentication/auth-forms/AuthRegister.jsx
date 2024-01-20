@@ -24,8 +24,8 @@ import { Formik } from 'formik';
 
 // project import
 import FirebaseSocial from './FirebaseSocial';
-import AnimateButton from 'components/@extended/AnimateButton';
-import { strengthColor, strengthIndicator } from 'utils/password-strength';
+import AnimateButton from '../../../components/@extended/AnimateButton';
+import { strengthColor, strengthIndicator } from '../../../utils/password-strength';
 
 // assets
 import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
@@ -70,6 +70,7 @@ const AuthRegister = () => {
           password: Yup.string().max(255).required('Password is required')
         })}
         onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
+          console.log(values, 'val');
           try {
             setStatus({ success: false });
             setSubmitting(false);

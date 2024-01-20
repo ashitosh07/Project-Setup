@@ -53,6 +53,14 @@ const utilities = {
       url: '/icons/ant',
       icon: icons.AntDesignOutlined,
       breadcrumbs: false
+    },
+    {
+      id: 'datagrid',
+      title: 'Tables',
+      type: 'item',
+      url: '/datagrid',
+      icon: icons.AntDesignOutlined,
+      breadcrumbs: false
     }
   ]
 };

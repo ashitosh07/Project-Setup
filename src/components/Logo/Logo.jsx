@@ -1,6 +1,7 @@
 // material-ui
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import { useDispatch, useSelector } from 'react-redux';
 
 /**
  * if you want to use image instead of <svg> uncomment following.
@@ -11,10 +12,14 @@ import Typography from '@mui/material/Typography';
  */
 
 import react from '../../assets/images/icons/react.svg';
+import logoFull from '../../assets/images/icons/alfuttaim-logo.svg';
+import logo from '../../assets/images/icons/alfuttaim-icon.svg';
 // ==============================|| LOGO SVG ||============================== //
 
 const Logo = () => {
   const theme = useTheme();
+
+  const { drawerOpen } = useSelector((state) => state.menu);
 
   return (
     /**
@@ -57,7 +62,8 @@ const Logo = () => {
           </linearGradient>
         </defs>
       </svg> */}
-      <img src={react} alt="onebill" width="" />
+      {drawerOpen === true ? <img src={logoFull} alt="onebill" width="180px" /> : <img src={logo} alt="onebill" width="40px" />}
+
       {/* <Typography variant="h5" sx={{ ml: 2, fontSize: 20 }}>
         Dashboard
       </Typography> */}

@@ -30,14 +30,14 @@ const pages = {
   // title: 'Services',
   type: 'group',
   children: [
-    // {
-    //   id: 'login1',
-    //   title: 'Login',
-    //   type: 'item',
-    //   url: '/login',
-    //   icon: icons.LoginOutlined,
-    //   target: true
-    // },
+    {
+      id: 'login1',
+      title: 'Login',
+      type: 'item',
+      url: '/login',
+      icon: icons.LoginOutlined,
+      target: true
+    },
     // {
     //   id: 'register1',
     //   title: 'Register',
@@ -52,7 +52,7 @@ const pages = {
       type: 'item',
       // url: '/login',
       icon: icons.ShoppingCartIcon,
-      target: true
+      target: false
     },
     {
       id: 'invoice',
@@ -60,7 +60,7 @@ const pages = {
       type: 'item',
       // url: '/register',
       icon: icons.CreditCardIcon,
-      target: true
+      target: false
     },
     {
       id: 'dispute',
@@ -68,7 +68,7 @@ const pages = {
       type: 'item',
       // url: '/register',
       icon: icons.ToggleOnIcon,
-      target: true
+      target: false
     },
     {
       id: 'budget',
@@ -76,7 +76,7 @@ const pages = {
       type: 'item',
       // url: '/register',
       icon: icons.QuestionAnswerIcon,
-      target: true
+      target: false
     },
     {
       id: 'approval',
@@ -84,7 +84,7 @@ const pages = {
       type: 'item',
       // url: '/register',
       icon: icons.TuneIcon,
-      target: true
+      target: false
     },
     {
       id: 'asset',
@@ -92,7 +92,7 @@ const pages = {
       type: 'item',
       // url: '/register',
       icon: icons.EmailIcon,
-      target: true
+      target: false
     },
     {
       id: 'statement',
@@ -100,7 +100,7 @@ const pages = {
       type: 'item',
       // url: '/register',
       icon: icons.EmailIcon,
-      target: true
+      target: false
     },
     {
       id: 'notification',
@@ -108,7 +108,7 @@ const pages = {
       type: 'item',
       // url: '/register',
       icon: icons.UpcomingIcon,
-      target: true
+      target: false
     },
     {
       id: 'settings',
@@ -116,7 +116,7 @@ const pages = {
       type: 'item',
       // url: '/register',
       icon: icons.TuneIcon,
-      target: true
+      target: false
     }
   ]
 };

@@ -15,6 +15,8 @@ const Typography = Loadable(lazy(() => import('../pages/components-overview/Typo
 const Color = Loadable(lazy(() => import('../pages/components-overview/Color')));
 const Shadow = Loadable(lazy(() => import('../pages/components-overview/Shadow')));
 const AntIcons = Loadable(lazy(() => import('../pages/components-overview/AntIcons')));
+import ComponentSkeleton from '../pages/components-overview/ComponentSkeleton';
+import DataGrid from '../pages/components-overview/DataGrid';
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -54,6 +56,14 @@ const MainRoutes = {
     {
       path: 'icons/ant',
       element: <AntIcons />
+    },
+    {
+      path: 'skeleton',
+      element: <ComponentSkeleton />
+    },
+    {
+      path: 'datagrid',
+      element: <DataGrid />
     }
   ]
 };

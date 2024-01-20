@@ -15,21 +15,21 @@ const AuthFooter = () => {
         textAlign={matchDownSM ? 'center' : 'inherit'}
       >
         <Typography variant="subtitle2" color="secondary" component="span">
-          &copy; IVP&nbsp;
-          <Typography component={Link} variant="subtitle2" href="" target="_blank" underline="hover">
-            Dashboard
+          &copy; Raasoft&nbsp;
+          <Typography component={Link} variant="subtitle2" href="https://www.raasoft.com/" target="_blank" underline="hover">
+            Infotech
           </Typography>
         </Typography>
 
         <Stack direction={matchDownSM ? 'column' : 'row'} spacing={matchDownSM ? 1 : 3} textAlign={matchDownSM ? 'center' : 'inherit'}>
           <Typography variant="subtitle2" color="secondary" component={Link} href="" target="_blank" underline="hover">
-            Hafaz
+            Contact
           </Typography>
           <Typography variant="subtitle2" color="secondary" component={Link} href="" target="_blank" underline="hover">
-            Hafaz
+            Services
           </Typography>
           <Typography variant="subtitle2" color="secondary" component={Link} href="" target="_blank" underline="hover">
-            Hafaz
+            About
           </Typography>
         </Stack>
       </Stack>
